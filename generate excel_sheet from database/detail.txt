@@ -1,0 +1,46 @@
+
+--
+-- Database: `test`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exel`
+--
+
+CREATE TABLE `exel` (
+  `id` int(11) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `code` varchar(200) NOT NULL,
+  `mobile` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `exel`
+--
+
+INSERT INTO `exel` (`id`, `name`, `code`, `mobile`) VALUES
+(1, 'Name 1', 'Code1', '1234567890'),
+(2, 'Name2', 'Code2', '0123456789');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `exel`
+--
+ALTER TABLE `exel`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `exel`
+--
+ALTER TABLE `exel`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
